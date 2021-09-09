@@ -1,4 +1,4 @@
-/* ------  Strukturen Unique ----- */
+/* ------  Strukturen ----- */
 
 
 /* DB boo löschen, falls vorhanden*/
@@ -13,7 +13,7 @@ CREATE DATABASE IF NOT EXISTS boo;
 /* Tabelle anlegen, falls noch nicht vorhanden */
 CREATE TABLE IF NOT EXISTS boo.test
 (
-    name VARCHAR(20) NOT NULL DEFAULT "TBA",
+    name VARCHAR(20) NOT NULL UNIQUE DEFAULT "TBA",
     age INT NOT NULL DEFAULT 0
 );
 
