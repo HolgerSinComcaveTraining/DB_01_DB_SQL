@@ -13,4 +13,14 @@ source 02_SQL_Tables/02d_db_table_SQL_Challenge.sql
 
 source 03_userDB/03_db_userDB_SQL.sql
 
+source 04_SQL_DataImport/04_db_csv_import.sql
+
+source 04_SQL_DataImport/04a_db_csv_import.sql
+
+source 04_SQL_DataImport/04b_db_csv_import.sql
+
+source 05_SQL_SELECT/05_1_parsing_csv.sql
+
+source 05_SQL_SELECT/05_2_que_basic.sql
+
 

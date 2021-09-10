@@ -24,13 +24,39 @@ CREATE TABLE IF NOT EXISTS boo.users
 /* Struktur der Tabelle anzeigen */
 DESCRIBE boo.users;
 
+
+
 /* ----- Daten ------- */
-INSERT INTO boo.users(user_name,user_pwd,first_name,family_name) VALUES ("Grizzi","1234", "Grizabella", "Meier");
-INSERT INTO boo.users(user_name,user_pwd,first_name,family_name) VALUES ("Maxi","testpasswort", "Max", "Mütze");
+/*
+INSERT INTO boo.users(user_name,user_pwd,first_name,family_name) 
+VALUES 
+    ("Grizzi","1234", "Grizabella", "Meier"),
+    ("Maxi","testpasswort", "Max", "Mütze")
+;
 INSERT INTO boo.users(user_name,user_pwd,first_name,family_name) VALUES ("Maxi2","qwertz", "Max", "Mustermann");
 INSERT INTO boo.users(user_name,user_pwd,first_name,family_name) VALUES ("Sabs","abcd", "Sabine", "Musterfrau");
+*/
+
+INSERT INTO boo.users(user_name,user_pwd,first_name,family_name) 
+VALUES 
+    ("Grizzi",SHA1("1234"), "Grizabella", "Meier"),
+    ("Maxi",SHA1("testpasswort"), "Max", "Mütze"),
+    ("Maxi2",SHA1("SKAF32457PWF"), "Max", "Mustermann"),
+    ("Sabs",SHA1("SryK"), "Sabine", "Musterfrau")
+;
+
 
 /* Inhalte der Tabelle anzeigen */
+SELECT * FROM boo.users;
+
+
+ALTER TABLE boo.users ADD user_plz INT(5) NOT NULL DEFAULT 00000;
+
+DESCRIBE boo.users;
+SELECT * FROM boo.users;
+
+#UPDATE boo.users SET user_plz = 99999 WHERE first_name = "Max";
+UPDATE boo.users SET user_plz = 47110 WHERE id = 1;
 SELECT * FROM boo.users;
 
 
