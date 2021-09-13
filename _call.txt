@@ -1,5 +1,7 @@
 /*  calls */
 
+mysql-ctl cli;
+
 source 02_SQL_Tables/02_db_table_SQL.sql
 
 
@@ -22,5 +24,10 @@ source 04_SQL_DataImport/04b_db_csv_import.sql
 source 05_SQL_SELECT/05_1_parsing_csv.sql
 
 source 05_SQL_SELECT/05_2_que_basic.sql
+
+source 05_SQL_SELECT/05_3_que_sort.sql
+
+source 05_SQL_SELECT/05_4_que_filter.sql
+
 
 
