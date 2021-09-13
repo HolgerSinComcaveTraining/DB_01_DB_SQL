@@ -12,7 +12,8 @@ SELECT
     CONCAT(sector, "|", industry) AS "Operations"
 FROM stocks.ccc
 #WHERE sector = "Communication Services"
-WHERE industry = "Media"
-ORDER BY dividend DESC
+#WHERE industry = "Entertainment"
+WHERE sector = "Communication Services" AND dividend < 0.5
+#ORDER BY dividend DESC
 LIMIT 20 
 ;
