@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS stocks.ccc
     ranking INT NOT NULL,	            -- Ranking in der Liste
     price DECIMAL(6,2) NOT NULL,		-- Preis pro Aktie in $ per 12/2019
     yield DECIMAL(6,4) NOT NULL,		-- Dividendenrendite (Dividendenanteil *100) / Aktienkurs
-    dividend DECIMAL(6,2) NOT NULL,     -- Dividendenanteil pro Aktie (Ausschuettung)
+    dividend DECIMAL(6,4) NOT NULL,     -- Dividendenanteil pro Aktie (Ausschuettung)
     payouts INT(2) NOT NULL,		    -- wieviel mal wird pro Jahr gezahlt?
     annualized DECIMAL(4,2) NOT NULL	-- jaehrlich
 
