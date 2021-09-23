@@ -41,7 +41,9 @@ source 05_SQL_SELECT/05_6d_que_avg.sql
 
 source 05_SQL_SELECT/05_6e_que_rendite_w_view.sql
 
-source 06_Klausur/klausur.sql
+source 06_Klausur/probeklausur.sql
+
+source 06_Klausur/klausur_expected.sql
 
 
 
