@@ -45,6 +45,8 @@ source 06_Klausur/probeklausur.sql
 
 source 06_Klausur/klausur_expected.sql
 
+source 06_Klausur/klausur.sql
+
 
 
 
